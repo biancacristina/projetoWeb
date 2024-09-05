@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notebook</title>
+    <style>
+        :root{
+             --cor-de-fundo:  #8a79d3;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--cor-de-fundo);
+            color: #070607;
+        }
+        /* Barra de Navegação */
+        .navbar {
+            background-color: #bf7bc2;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        .navbar ul li {
+            display: inline;
+        }
+        .navbar ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+        .navbar ul li a:hover {
+            background-color: #623ee6;
+            border-radius: 5px;
+        }
+
+        .hero {
+            background-color: #8a79d3;
+            padding: 100px 20px 50px 20px;
+            text-align: center;
+            margin-top: 60px;
+        }
+        .hero h1 {
+            color: #0a0909;
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            color: #0f1110;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .products {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #ffffff;
+        }
+        .products h2 {
+            color: #101011;
+            margin-bottom: 30px;
+        }
+        .products .product-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .product-list .product {
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 20px;
+            width: 250px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .product h3 {
+            margin: 15px 0 10px 0;
+            font-size: 20px;
+            color: #bf7bc2;
+        }
+        .product p {
+            font-size: 18px;
+            color: #333;
+        }
+        .product .price {
+            font-size: 24px;
+            color: #070607;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .product a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #623ee6;
+            color: #ffffff;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .product a:hover {
+            background-color: #a54f9e;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <div class="navbar">
+        <ul>
+            
+            <li><a href="celulares.html">Celulares</a></li>
+            <li><a href="computadores.html">Notebook</a></li>
+            <li><a href="avaliação.html">Avaliações</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Notebook</h1>
+        <p>"Confira alguns Computadores, corre aqui na BG Dispositivos que ta tudo no precinho ótimo.." </p>
+    </div>
+
+    <!-- Produtos-->  
+    <div class="products">
+        <h2>Nossos Produtos</h2>
+        <div class="product-list">
+            <div class="product">  
+                <img src="https://vaiobr.vtexassets.com/arquivos/ids/162506-800-800?v=638556269494370000&width=800&height=800&aspect=true" alt="Notebook 1">
+                <h3>Notebook VAIO®
+
+</h3>
+                <p>5700U Linux 16GB RAM 512GB SSD 15,6'' Full HD - Cinza Grafite
+
+</p>
+                <div class="price">R$ 3.099,00</div>
+                <a href="#">Comprar Agora</a>
+            </div>
+            <div class="product">
+                <img src="https://a-static.mlcdn.com.br/450x450/notebook-positivo-vision-c15-intel-celeron-4gb-1-128gb-156-hd-windows-11-microsoft-365-c4128a-1/magazineluiza/237689700/1a7a71197f3433fa83665e4e2fb901b7.jpg" alt="Notebook 2">
+                <h3>Notebook Positivo Vision</h3>
+                <p>Notebook Positivo Vision C15 Intel Celeron 4GB 1
+
+4.6
+
+</p>
+                <div class="price">R$ 1.759,00</div>
+                <a href="#">Comprar Agora</a>
+            </div>
+            <div class="product">
+                <img src="https://a-static.mlcdn.com.br/450x450/notebook-ultra-ub540-intel-core-i5-8gb-ram-ssd-256gb-14-full-hd-windows-11/magazineluiza/238429000/dfc3a043441d59ccb5e9cb959b43e9f9.jpg"
+                alt="Celular 3">
+                <h3>Notebook Ultra</h3>
+                <p> Notebook Ultra UB540 Intel Core i5 8GB RAM</p>
+                <div class="price">R$ 2.159,00</div>
+                <a href="#">Comprar Agora</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
