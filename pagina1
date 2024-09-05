@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendas de Dispositivos</title>
+    <style>
+        :root{
+             --cor-de-fundo:  #8a79d3;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--cor-de-fundo);
+            color: #070607;
+        }
+        /* Barra de Navegação */
+        .navbar {
+            background-color: #bf7bc2;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        .navbar ul li {
+            display: inline;
+        }
+        .navbar ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+        .navbar ul li a:hover {
+            background-color: #623ee6;
+            border-radius: 5px;
+        }
+        /* Hero Section */
+        .hero {
+            background-color: #8a79d3;
+            padding: 100px 20px 50px 20px;
+            text-align: center;
+            margin-top: 60px;
+        }
+        .hero h1 {
+            color: #0a0909;
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            color: #0f1110;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .hero button {
+            background-color: #141314;
+            color: #ffffff;
+            padding: 15px 30px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .hero button:hover {
+            background-color: #c87edf;
+        }
+        /* Seção de Destaques */
+        .featured {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #ffffff;
+        }
+        .featured h2 {
+            color: #101011;
+            margin-bottom: 30px;
+        }
+        .featured .device-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .device-list .device {
+            background-color: #1e2122;
+            color: #ffffff;
+            padding: 20px;
+            width: 200px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .device-list .device a {
+            color: #bf7bc2;
+            text-decoration: none;
+        }
+        /* Busca Personalizada */
+        .search-bar {
+            padding: 30px 20px;
+            background-color: #8a79d3;
+            text-align: center;
+        }
+        .search-bar input {
+            padding: 10px;
+            font-size: 16px;
+            width: 300px;
+            border-radius: 5px;
+            border: 2px solid #070808;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #0d0e0d;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .search-bar button:hover {
+            background-color: #a54f9e;
+        }
+        /* Newsletter Signup */
+        .newsletter {
+            padding: 50px 20px;
+            background-color: #8a79d3;
+            color: #050404;
+            text-align: center;
+        }
+        .newsletter h2 {
+            margin-bottom: 20px;
+        }
+        .newsletter input[type="email"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 300px;
+            border-radius: 5px;
+            border: 2px solid #070808;
+        }
+        .newsletter button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #020202;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .newsletter button:hover {
+            background-color: #0a0a0a8f;
+        }
+        /* Rodapé */
+        .footer {
+            background-color: #0f1111;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <div class="navbar">
+        <ul>
+            <li><a href="celulares.html">Celulares</a></li>
+            <li><a href="computadores.html">Notebook</a></li>
+            <li><a href="avaliação.html">Avaliações</a></li>
+            <li><a 
+href="contato.html">Contato</a></li>
+             
+         
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>BG Dispositivo</h1>
+        <p>Explore uma seleção incrível de dispositivos recomendados especialmente para você!</p>
+        
+</body>
+</html>
