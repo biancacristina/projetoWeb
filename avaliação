@@ -1,0 +1,170 @@
+<<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avalie Nosso Produto</title>
+    <style>
+        :root {
+            --cor-de-fundo: #8a79d3;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--cor-de-fundo);
+            color: #070607;
+        }
+        /* Barra de Navegação */
+        .navbar {
+            background-color: #bf7bc2;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        .navbar ul li {
+            display: inline;
+        }
+        .navbar ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+        .navbar ul li a:hover {
+            background-color: #623ee6;
+            border-radius: 5px;
+        }
+        /* Conteúdo Principal */
+        main {
+            max-width: 800px;
+            margin: 80px auto 2rem auto;
+            padding: 1rem;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 0.5rem 0;
+            font-weight: bold;
+        }
+        input, select, textarea, button {
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        button {
+            background-color: #8a79d3;
+            color: white;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        .reviews {
+            margin-top: 2rem;
+        }
+        .review {
+            border-bottom: 1px solid #ddd;
+            padding: 1rem 0;
+        }
+        .review:last-child {
+            border-bottom: none;
+        }
+        /* Rodapé */
+        .footer {
+            background-color: #0f1111;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <div class="navbar">
+        <ul>
+            <li><a href="celulares.html">Celulares</a></li>
+            <li><a href="computadores.html">Notebook</a></li>
+            <li><a href="avaliação.html">Avaliações</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <h1>Avalie Nosso Produto</h1>
+        <h2>Deixe Sua Opinião</h2>
+        <form id="reviewForm">
+            <label for="name">Seu Nome:</label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+
+            <label for="rating">Classificação:</label>
+            <select id="rating" name="rating" required>
+                <option value="5">5 Estrelas</option>
+                <option value="4">4 Estrelas</option>
+                <option value="3">3 Estrelas</option>
+                <option value="2">2 Estrelas</option>
+                <option value="1">1 Estrela</option>
+            </select>
+
+            <label for="comment">Comentário:</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Escreva seu comentário aqui..." required></textarea>
+
+            <button type="submit">Enviar Avaliação</button>
+        </form>
+
+        <section class="reviews">
+            <h2>Avaliações Recentes</h2>
+            <div id="reviewsList">
+                <!-- As avaliações serão exibidas aqui -->
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('reviewForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const rating = document.getElementById('rating').value;
+            const comment = document.getElementById('comment').value;
+
+            if (name && rating && comment) {
+                const reviewList = document.getElementById('reviewsList');
+
+                const newReview = document.createElement('div');
+                newReview.classList.add('review');
+                newReview.innerHTML = `
+                    <h3>${name} - ${rating} Estrela(s)</h3>
+                    <p>${comment}</p>
+                `;
+
+                reviewList.prepend(newReview);
+
+                document.getElementById('reviewForm').reset();
+            }
+        });
+    </script>
+</body>
+</
